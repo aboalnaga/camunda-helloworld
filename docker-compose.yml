@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  modeler:
+    build: ./modeler
+    network_mode: host
+    environment: {DISPLAY:}
+    volumes: ["${HOME}/.Xauthority:/root/.Xauthority:rw"]
