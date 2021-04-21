@@ -5,6 +5,7 @@ services:
     build: ./modeler
     network_mode: host
     environment: {DISPLAY:}
+    working_dir: /models
     volumes:
       - ${HOME}/.Xauthority:/root/.Xauthority
       - ./classes:/models

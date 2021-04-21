@@ -10,3 +10,6 @@ docker-compose up
 
 [http://localhost/camunda-welcome/](http://localhost/camunda-welcome/)
 
+### REST Endpoint
+
+`http://localhost/engine-rest`
