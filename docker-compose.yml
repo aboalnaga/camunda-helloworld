@@ -6,3 +6,9 @@ services:
     network_mode: host
     environment: {DISPLAY:}
     volumes: ["${HOME}/.Xauthority:/root/.Xauthority:rw"]
+
+  platform:
+    image: camunda/camunda-bpm-platform:latest
+    ports: [80:8080]
+    volumes:
+      - ./classes/:/camunda/webapps/camunda-invoice/WEB-INF/classes/
