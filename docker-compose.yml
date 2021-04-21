@@ -5,7 +5,9 @@ services:
     build: ./modeler
     network_mode: host
     environment: {DISPLAY:}
-    volumes: ["${HOME}/.Xauthority:/root/.Xauthority:rw"]
+    volumes:
+      - ${HOME}/.Xauthority:/root/.Xauthority
+      - ./classes:/models
 
   platform:
     image: camunda/camunda-bpm-platform:latest
